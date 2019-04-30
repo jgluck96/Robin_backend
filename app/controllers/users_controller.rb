@@ -6,8 +6,15 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.create(user_params)
-    render json: @user
+    user = User.create(user_params)
+
+    if user.valid?
+      token = encode_token(user.id)
+
+      render json: {user: UserSerializer.new(user), token: token}
+    else
+      render json: {errors: 'Fill out correct info'}
+    end
   end
 
 
