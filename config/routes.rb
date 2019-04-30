@@ -3,5 +3,7 @@ Rails.application.routes.draw do
   resources :rentals
   resources :own_items
   resources :users
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  # login
+  post '/login', to: 'auth#create'
+  get '/auto_login', to: 'auth#auto_login'
 end
