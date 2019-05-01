@@ -5,6 +5,8 @@ class User < ApplicationRecord
   has_many :own_items
   has_many :items, through: :own_items
 
+  has_many :requests
+
   has_secure_password
 
 end
