@@ -6,16 +6,16 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-
-User.create(name: 'Josh Gluck', email: 'joshgluck1@gmail.com', mobile: 5612127533, password:'pass', location:'new york', age:22)
-User.create(name: 'Jordan Gluck', email: 'jgluck777@gmail.com', mobile: 9545932111, password:'pass', location:'new york', age:24)
-User.create(name: 'rich Gluck', email: 'rgluck@gmail.com', mobile: 5612513271, password:'pass', location:'new york', age:52)
-
-Item.create(title: 'speaker', description: 'small speaker', location: 'ny', category: 'indoors', value: 100, rental_price: 15)
-Item.create(title: 'bike', description: 'big bike', location: 'nj', category: 'sports', value: 300, rental_price: 28)
-Item.create(title: 'skateboard', description: 'fast skateboard', location: 'nj', category: 'sports', value: 200, rental_price: 18)
-Item.create(title: 'skateboard', description: 'fast skateboard', location: 'nj', category: 'sports', value: 200, rental_price: 18)
-Item.create(title: 'skateboard', description: 'fast skateboard', location: 'nj', category: 'sports', value: 200, rental_price: 18)
+# NotificationFeed.create(name: 'test feed')
+# User.create(name: 'Josh Gluck', email: 'joshgluck1@gmail.com', mobile: 5612127533, password:'pass', location:'new york', age:22)
+# User.create(name: 'Jordan Gluck', email: 'jgluck777@gmail.com', mobile: 9545932111, password:'pass', location:'new york', age:24)
+# User.create(name: 'rich Gluck', email: 'rgluck@gmail.com', mobile: 5612513271, password:'pass', location:'new york', age:52)
+#
+# Item.create(title: 'speaker', description: 'small speaker', location: 'ny', category: 'indoors', value: 100, rental_price: 15)
+# Item.create(title: 'bike', description: 'big bike', location: 'nj', category: 'sports', value: 300, rental_price: 28)
+# Item.create(title: 'skateboard', description: 'fast skateboard', location: 'nj', category: 'sports', value: 200, rental_price: 18)
+# Item.create(title: 'skateboard', description: 'fast skateboard', location: 'nj', category: 'sports', value: 200, rental_price: 18)
+# Item.create(title: 'skateboard', description: 'fast skateboard', location: 'nj', category: 'sports', value: 200, rental_price: 18)
 
 # OwnItem.create(user_id: 13, item_id: 14)
 # OwnItem.create(user_id: 13, item_id: 15)
