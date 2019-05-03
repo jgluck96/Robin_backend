@@ -6,6 +6,11 @@ class RequestsController < ApplicationController
 
   def create
     @request = Request.create(request_params)
+    # inbox = NotificationFeed.find(params[:name]["inbox_id"])
+    # InboxChannel.broadcast_to(inbox, request)
+    # render json: { message: MessageSerializer.new(message) }, status: :accepted
+    # container = Container.find(params[:container_id])
+    # ContainerChannel.broadcast_to(container, @request)
   end
 
   def show
