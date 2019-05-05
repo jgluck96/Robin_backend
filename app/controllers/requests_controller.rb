@@ -27,7 +27,7 @@ class RequestsController < ApplicationController
   private
 
   def request_params
-    params.require(:request).permit(:requester_id, :receiver_id, :item_id, :accepted, :subtotal, :date_start, :date_end, :days_rented, :service_fee, :total_price)
+    params.require(:request).permit(:requester_id, :receiver_id, :item_id, :accepted, :subtotal, :date_start, :date_start_server, :date_end_server, :date_end, :days_rented, :service_fee, :total_price)
   end
 
 end

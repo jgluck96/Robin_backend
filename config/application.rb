@@ -1,5 +1,5 @@
 require_relative 'boot'
-
+# autoload_paths << Rails.root.join('lib')
 require "rails"
 # Pick the frameworks you want:
 require "active_model/railtie"
