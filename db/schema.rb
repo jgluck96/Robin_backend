@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_03_182435) do
+ActiveRecord::Schema.define(version: 2019_05_05_034858) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,8 @@ ActiveRecord::Schema.define(version: 2019_05_03_182435) do
     t.float "lng"
     t.float "lat"
     t.string "title"
+    t.string "city"
+    t.string "state"
   end
 
   create_table "own_items", force: :cascade do |t|
@@ -45,6 +47,9 @@ ActiveRecord::Schema.define(version: 2019_05_03_182435) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "subtotal"
+    t.string "date_start_server"
+    t.string "date_end_server"
+    t.string "status"
   end
 
   create_table "requests", force: :cascade do |t|
@@ -60,6 +65,8 @@ ActiveRecord::Schema.define(version: 2019_05_03_182435) do
     t.integer "days_rented"
     t.float "service_fee"
     t.float "total_price"
+    t.string "date_start_server"
+    t.string "date_end_server"
   end
 
   create_table "users", force: :cascade do |t|
@@ -72,6 +79,7 @@ ActiveRecord::Schema.define(version: 2019_05_03_182435) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.float "funds"
+    t.text "bio"
   end
 
 end

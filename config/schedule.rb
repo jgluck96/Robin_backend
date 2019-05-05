@@ -5,13 +5,13 @@
 set :chronic_options, hours24: true
 # Example:
 #
-# set :output, "/path/to/my/cron_log.log"
+RAILS_ROOT = File.expand_path(File.dirname(__FILE__) + '/')
+set :output, "#{path}/log/cron_log.log"
 #
 every 1.minute do
 #   command "/usr/bin/some_great_command"
-  runner "Rental.check"
-  puts "in the dog"
-#   rake "some:great:rake:task"
+  runner "Rental.check", :environment => "development"
+  # rake "my_task"
 end
 #
 # every 4.days do

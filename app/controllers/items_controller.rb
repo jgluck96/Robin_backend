@@ -13,6 +13,6 @@ class ItemsController < ApplicationController
 
   private
   def item_params
-    params.require(:item).permit(:title, :description, :location, :category, :value, :rental_price, :lat, :lng)
+    params.require(:item).permit(:title, :city, :state, :description, :location, :category, :value, :rental_price, :lat, :lng)
   end
 end
