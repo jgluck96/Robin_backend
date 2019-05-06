@@ -6,5 +6,6 @@ class Item < ApplicationRecord
   has_many :users, through: :own_items
 
   has_many :request
+  has_many :reviews
 
 end
