@@ -8,4 +8,6 @@ class Item < ApplicationRecord
   has_many :request
   has_many :reviews
 
+  has_many :images
+
 end

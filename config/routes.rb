@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :items
   resources :rentals
   resources :own_items
+  resources :images
   resources :users
   resources :requests
   resources :notification_feeds
