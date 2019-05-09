@@ -2,7 +2,7 @@ class ItemsController < ApplicationController
 
   def index
     @items = Item.all
-    render json: @items, include: ['own_items.user', 'rentals', 'reviews.user']
+    render json: @items, include: ['own_items', 'rentals', 'reviews.user', 'images']
   end
 
   def create
