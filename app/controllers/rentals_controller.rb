@@ -1,7 +1,7 @@
 class RentalsController < ApplicationController
   def index
     @rentals = Rental.all
-    render json: @rentals
+    render json: @rentals, include: ['item.images', 'item.reviews', 'item.rentals']
   end
 
   def create

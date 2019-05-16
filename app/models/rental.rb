@@ -14,6 +14,7 @@ class Rental < ApplicationRecord
           puts 'expired and read'
         elsif (hours < 0 && rental.status == 'expiring')
           rental.update(status: 'expired', read: false)
+          puts 'expired'
         else
           puts "not ending soon"
         end
