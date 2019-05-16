@@ -10,6 +10,11 @@ class ItemsController < ApplicationController
     render json: @item
   end
 
+  def show
+    @item = Item.find(params[:id])
+    render json: @item
+  end
+
 
   private
   def item_params

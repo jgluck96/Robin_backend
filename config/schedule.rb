@@ -10,6 +10,7 @@ set :output, "#{path}/log/cron_log.log"
 #
 every 1.minute do
 #   command "/usr/bin/some_great_command"
+puts 'hi'
   runner "Rental.check", :environment => "development"
   # rake "my_task"
 end
