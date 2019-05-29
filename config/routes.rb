@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root to: 'users#index'
   resources :reviews
   resources :notifications
   resources :items
@@ -11,6 +12,5 @@ Rails.application.routes.draw do
   # login
   post '/login', to: 'auth#create'
   get '/auto_login', to: 'auth#auto_login'
-
   mount ActionCable.server => '/cable'
 end
